@@ -6,8 +6,15 @@ head {
     border: 1px solid blue;
 }
 
+#title {
+    font-family: cursive;
+    font-size: 150%;
+    color: orange;
+}
+
 h1 {
     color: red;
     font-family: sans-serif;
     font-size: 300%;
 }
+
