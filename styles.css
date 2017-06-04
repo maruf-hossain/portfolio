@@ -1,5 +1,5 @@
 body {
-    background-color: cornsilk;
+   background-color: cornsilk;
 }
 
 head {
@@ -23,9 +23,8 @@ nav {
    float: right;
    position: sticky;
    top: 0;
+   background-color: antiquewhite;
 }
-
-
 
 nav ul {
    margin: 0;
@@ -46,4 +45,8 @@ nav > ul > li > a {
    line-height: 2em;
    padding: 0.5em 0.5em;
    text-direction: none;
+}
+
+Section {
+   max-width: 700px;
 }
