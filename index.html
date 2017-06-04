@@ -1,12 +1,158 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang = "en-US">
+   <head>
+      <meta charset = "UTF-8">
+      <title>externalStyle.html</title>
+      <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+       <!-- optimize for mobile -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   </head>
+   <body>
+      <nav id="navigation_bar">
+         <ul>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#work_experiences">Work Experiences</a></li>
+			<li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+<!--
+      <nav id="auto_gen_navigation_bar">
+         <ul>
+            <script>
+               var nav_bar = document.getElementById("navigation_bar");
+//               var sections = document.getElementsByClassName("Section");
+               var nav_bar_html = "Test Auto Gen Nav Bar";
+               sections.forEach(function(section)) {
+//                  nav_bar_html = nav_bar_html + "<li><a href=\"" + section.id + "\">" + section.id + "</a></li>";
+                  nav_bar_html = nav_bar_html.concat(section.id);
+               }
+               document.write(nav_bar_html);
+            </script>
+         </ul>
+      </nav>
+-->
+      <!-- Title Page -->
+      <section id="title_page" class="Section">
+         <!-- Title image goes here -->
+         <img id="titleImage" src="resources/pizzacat.png"/>
+         <div id="title">Siamese Pizza Cat</div>
+      </section>
+       
+      <!-- About Me -->
+      <section id="about_me" class="Section">
+         <h1 class="sectionHeader">About Me</h1>
+         <section id="about_me_content">
+            <section id="about_me_description">
+               <p>I am an evil genius, hailing from the great white north. Bow down before my icy will, peasants!</p>
+               <p>Employers don't pick me.</p>
+               <p>I pick the employers.</p>
+               <p>*Mic drop*</p>
+            </section>
+         </section>
+      </section>
+       
+      <!-- Experiences -->
+      <section id="work_experiences" class="Section">
+         <h1 class="sectionHeader">Experiences</h1>
+         <section id="work_experience_1" class="WorkExperience">
+            <section id="work_experience_1_content">
+               <header id="work_experience_1_header">
+                  <h3>Overlord</h3>
+                  <p>1999-2000</p>
+               </header>
+               <section id="work_experience_1_description">
+                  <p> Established the first global empire of Pizza Cats. All  global pizza cat activities was authorized, monitored, and results verified by my established network of Pizza Cat minions.</p>
+                  <div id="project_1_task_list" class="TaskList">
+                     <ul>
+                        <li>Oversee daily lives of billions</li>
+                        <li>Ensure the stability of an empire</li>
+                        <li>Quell rebelliions before at inception</li>
+                     </ul>
+                  </div>
+               </section>
+            </section> 
+         </section>
+         <section id="work_experience_2" class="WorkExperience">
+            <section id="work_experience_2_content">
+               <header id="work_experience_2_header">
+                  <h3>Batman</h3>
+                  <p>2000-2003</p>
+               </header>
+               <section id="work_experience_2_description">
+                  <p>The world needs a batman. As I tired of ruling billions, I decided to take up the cape and cowl. For 3 years the ciminal world of Gotham shook in terror and cried out in pain as I ripped their sick dreams and desires from them and left them no hope of ever regaining that which they sought at the expense of the weak and the innocent.</p>
+                  <div id="project_2_task_list" class="TaskList">
+                     <ul>
+                        <li>Maintain highly sophisticated network of bugs and bots allowing the extraction of relavent information to the removal of criminals</li>
+                        <li>Investigating the most sinister of crimes plaguing Gotham</li>
+                        <li>Cool tricks and shit</li>
+                     </ul>
+                  </div>
+               </section>
+            </section> 
+         </section>
+      </section>
+       
+      <!-- Skills -->
+      <section id="skills" class="Section">
+          <h1 class="sectionHeader">Skills</h1>
+          <section id="skills_content">
+              <section id="skills_description">
+                 <h3> Fight me and find out.</h3>
+              </section>         
+          </section> 
+      </section>
+      
+      <!-- Projects -->
+      <section id="projects" class="Section">
+         <h1 class="sectionHeader">Projects</h1>
+         <section id="project_1" class="Project">
+            <section id="project_1_content">
+               <section id="project_1_description">
+                  <header id="project_1_header" class="SubSectionHeader">
+                     <h3>Project Atlas</h3>
+                     <div id="project_1_task_list" class="TaskList">
+                        <ul>
+                           <li>To infinity and beyond </li>
+                           <li>Live long and prosper </li>
+                           <li>May the Force be with you </li>
+                        </ul>
+                     </div>    
 
-    <head>
-        <link type="text/css" rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-    
-    </body>
-
+               </section>
+            </section>
+         </section>
+         <section id="project_2" class="Project">
+            <section id="project_2_content">
+               <section id="project_2_description">
+                  <header id="project_2_header" class="SubSectionHeader">
+                     <h3>Capstone</h3>
+                     <div id="project_2_task_list" class="TaskList">
+                        <ul>
+                           <li>Wrote stuff </li>
+                           <li>Built stuff </li>
+                           <li>Showed stuff </li>
+                        </ul>
+                     </div>    
+                  </header>
+               </section>
+            </section>
+         </section>
+      </section>
+      <!-- Contact  -->
+       
+      <section id="contact" class="Section">
+          <h1 class="sectionHeader">Contact</h1>
+          <section id="contact_content">
+              <address>
+                Written by <a href="mailto:nana.nana.nana.nanaa@bat.man">Siamese Cat</a>.<br> 
+                Visit us at:<br>
+                siamahmedchowdhury.com<br>
+                1 Batcave, YoullNeverKnow, Gotham<br>
+                Canada
+              </address>         
+          </section> 
+      </section> 
+   </body>
 </html>
