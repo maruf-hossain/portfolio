@@ -20,7 +20,28 @@ h1 {
 
 
 nav {
-   background-color: darkkhaki;
+   background-color: cornsilk;
    margin: 0;
    overflow: hidden;
+}
+
+nav ul {
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   /*this allows us to arrange list times in a row, without using float */
+   display: inline-block;
+   list-style-type: none;
+}
+
+/* Create a style for the first level items */
+nav > ul > li > a {
+   color: #aaa;
+   background-color: :#FF0;
+   display: block;
+   line-height: 2em;
+   padding: 0.5em 0.5em;
+   text-direction: none;
 }
