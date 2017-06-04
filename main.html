@@ -8,7 +8,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    </head>
    <body>
-      <nav>
+      <nav id="navigation_bar">
          <ul>
             <li><a href="#about_me">About Me</a></li>
             <li><a href="#experiences">Experiences</a></li>
@@ -16,6 +16,21 @@
             <li><a href="#contact">Contact</a></li>
          </ul>
       </nav>
+<!--
+      <nav id="auto_gen_navigation_bar">
+         <ul>
+            <script>
+               var nav_bar = document.getElementById("navigation_bar");
+               var sections = document.getElementsByClassName("Section");
+               var nav_bar_html = "Test Auto Gen Nav Bar";
+//               sections.forEach(function(section)) {
+//                  nav_bar_html = nav_bar_html + "<li><a href=\"" + section.id + "\">" + section.id + "</a></li>";
+//               }
+               document.write(nav_bar);
+            </script>
+         </ul>
+      </nav>
+-->
       <!-- Title Page -->
       <section id="title_page" class="Section">
          <!-- Title image goes here -->
