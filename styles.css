@@ -20,13 +20,12 @@ h1 {
 
 
 nav {
-   background-color: floralwhite;
-   margin: 0;
-   overflow: hidden;
+   float: right;
    position: sticky;
    top: 0;
-   left: 0;
 }
+
+
 
 nav ul {
    margin: 0;
@@ -35,7 +34,7 @@ nav ul {
 
 nav ul li {
    /*this allows us to arrange list times in a row, without using float */
-   display: inline-block;
+   display:table-row;
    list-style-type: none;
 }
 
