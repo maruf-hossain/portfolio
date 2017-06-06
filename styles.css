@@ -18,6 +18,19 @@ h1 {
     font-size: 300%;
 }
 
+a {
+	text-decoration: none;	
+}
+
+a:link, a:visited {
+	color: #CF5C3F;
+}
+
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: #FFF;
+}
+
 
 nav {
    float: right;
